@@ -46,5 +46,10 @@ group :development do
   gem 'sqlite3', '1.3.5'#added here because didnt deploy to heroku, as advised on https://gist.github.com/JennDudley/2493288
 end
 
+group :production do
+  gem 'pg'
+  gem 'rails_12factor'
+end
+
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
